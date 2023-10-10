@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      
+      .container {
+        width: 500px;
+        margin: 0 auto;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      form {
+        margin-top: 20px;
+      }
+      
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Username">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+  </div>
+</body>
+</html>

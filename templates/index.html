@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Resizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACeXFEA6/z5AKsvJQD+Vk8A2+/cAO/9/ADy+P8AsDMfAPP8+QD9X08A3fDfAPT/+QCYIxQA60RHAPX9/ACyMiUA2fLuAOH02QD4+/8A//L/AP31/wDr69kAoUM9APn+/wDV18sA//r8AP/7/wDSHh8A/+XQAOT58QDo8/EA5Ny/AK9FOgDiQS0A6fnoAO/56AD/8twA67erAP9YTQD19voA69zaAP/26ADy//oA+/P6ANj15gDsQ0UA9fr9APn/8QB5PkIA5vDgAPnf0QDvn4gA2NnJALwMBgDg2cAA4zwxAO3x7AD+59cA4P/7AKExJAD5XEgA/1VFALEkIQC3IxUA3ktDAO06PQDv+v4A8fr+ANv13gD0/PsAsDInAN732wD/9PUA//f1APn9/gD/2swA4vPqAKpGLQD//PsA8u7SAO3t4QDg8f8As49/AN0dDAD/wqkA/0pAAP9QNwCpTUIA8PPqAOH//ACtSkIA7/LwALJMNgDx/vAA//PhAPs5MgD0/PwA9v/8AMloZQDBv7QA/9nKANzNywDf/OIA/vz8ANZGLQD///wA4/H3AKRNQwDk/vEAuo59AOfdxQDn//QA49/UANHs6QDn//0AozUpANkoJQClNSkAsAYAAL4bIwD1+/oA9vn9APf/9ADLjYMA6OXdAPX//QCwXlIA8E1LAOby8gCcLyEAqCsMAM4AAADhSCsAzyYpAPNdRQCyJg8A5v/1APbs8gDs/PUA5Ug0APH0+ADlRT0AuCUVAPHz/gDpRjcA2O/hAPrXvQDY8OQAqDcnAPr37wD1/PUA1RIAAPf9+ACdJAoA9f77AOfv2AC9MBsA+v/+AOrq5AD/+f4A29XKAKJKPACQNiUApUg/AN3gxwCsIhYA2x4bAPbu5wDbHx4A9fLqAOj/9gD88uEA5eLNAORyYQD/6/AA7f//AP/x8ADv//8A3e/iAPD//wCeJQUA9vn/AP/t/wD88/8A/vvzAPv/9gDqJScA+vz/APv//wD/+f8A7sW2AOX53AD9//8A//z/AMsgIgD///8A2EQzAOD+6wCpJB0A5I95APNbSgDRWTwA6/n3ANtOPwDfSz8A5UU/AP/y6wD2/PcA//L0APj6+gDj7d0AvC4XAODp7ADb0cAA6efmANn19QCgSEEAtBoAAOD38gD37eYA5f37APZbSwDy9ewA6v/vANbo4QDq+P4A6v/4AOZ3VwD58/gA7m9aAPP/+AD91cMA60ZDAPz+/gD///gA3/H8ANn+9gDs894A6/nnAOv75ADh//kArUlFAO/p/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAw2Fv4X16ltHAipgOnZVyt+vVUqampqampqampqZ7oEpJrXZ3hagbwrqmdD7GNX6p7smHJTLnZEs2H26kkpCiCiOGnHA6iPAduOq5XSRVO8Us3T8ouytDGsEnecM5XwKROCal1hJgWaeuF0K8mzdzk9ADDOCMaRgAMGV4z0fEdd5qCYIVGU6+U4Nt5mdPhAdbiT20RK8FMTNiYy69q4tG1NfImbIGE7EvzgufFO1olBCAJo6etbaP3Agq5LPviw8e2zzTNOxFyqra4poBrCGBcSLj2SDYV2ujFqFa8VyXTWzpVOUNQY1A6H/MzS3LVsdI8t9mfCm/EV5YBFCw0hxMUQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">    <style>
+        .flex {
+            display: flex;
+            justify-content: right;
+            padding-right:120px;
+            text-align: left;
+            padding-left: 200px;
+            padding-bottom:90px;
+        }
+        .flexy {
+            text-align:right;
+            justify-content: right;
+            padding-right:150px;
+            padding-left: 200px;
+        }
+        .imgcontainer{
+
+            padding-bottom: 50px;
+            padding-left:50px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/document">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form action="/login" method='post'>
+                <div class="d-flex" role="search">
+                    <button class="btn btn-outline-success mx-2" type="submit" name="login"  value="success1">login</button>
+                </div>
+                </form>
+                <form action="/signup" method='post'>
+                    <div class="d-flex" role="search">
+                        <button class="btn btn-outline-success mx-2" type="submit" name="signup"  value="success2">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <li class="{{ category }}">{{ message | safe}}</li>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div class="container my-4">
+        <h1 class=".fs-2 text">Image Resizer - Resize your image here</h1>
+        <form action="/edit" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="form file" class="form-label">Select an image</label>
+                <input type="file" class="form-control" name="file" id="form file">
+            </div>
+            <div class="mb-3">
+                <div class="form-floating">
+                    <select name="operation" class="form-select" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option selected>Open this select menu</option>
+                        <option value="0">80% of image reduced</option>
+                        <option value="1">60% of image reduced</option>
+                        <option value="2">40% of image reduced</option>
+                        <option value="3">20% of image reduced</option>
+                    </select>
+                    <label for="floatingSelect">Works with selects</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+        <table cellspacing="20">
+            <tr>
+                <td><div class="imgcontainer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH8hpBeZVrIAXeVQwkkB3JePrF3EKcDzUc-w&usqp=CAU" class="resizer"></div>
+                </td>
+                <td><div class="imgcontainer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrohTy6nl_Jq8c_IBCKMePtUEgwf4PB3ZMFg&usqp=CAU" class="resizer"></div>
+                </td>
+                <td>
+                    <div class="flexy">
+                        <h2>How to Resize an Image?</h2>
+                    </div>
+                    <div class="flex">
+                        1. Click on the "Select Image" button to select an image.<br>
+                        2. Enter a new target size for your image.<br>
+                        3. Click the "submit" button to resize the image<br>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
